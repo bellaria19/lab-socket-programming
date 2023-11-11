@@ -19,6 +19,6 @@ while 1:
      #if not data: break
      currentTime = " " + " 201902738 이현재!! " + time.ctime(time.time()) + "\r\n"
      print(data.decode('utf-8'))
-     data = data + currentTime.encode('ascii')
+     data = data + currentTime.encode('utf-8')
      conn.send(data)  # echo
      conn.close()
